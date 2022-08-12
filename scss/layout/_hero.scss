@@ -11,15 +11,21 @@
   background-repeat: no-repeat;
 }
 .hero__title {
-  max-width: 695px;
+  max-width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: calc(60 / 44);
+  font-size: 26px;
+  line-height: calc(42 / 26);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white);
+
+  @media screen and (min-width: 1200px) {
+    max-width: 695px;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+  } 
 }
 .hero__btn {
   min-width: 200px;
